@@ -1,13 +1,12 @@
 language: go
 install:
-  - "go get -t -v ./..."
-  - "go test -v ./..."
-  - "go build -o bin/slex -v ."
+- go get -t -v ./...
+- go test -v ./...
+- go build -o bin/slex -v .
 deploy:
   provider: releases
-  api_key: "f945b1b88fb252529e9ea6317f47d2ab709bf904"
-  #"oEz2bY2j0AxQeG4/Kw3hKVwZOP+8OrUiRQ0SZhzX4ZH//9vOdzXIiNqFnk3NzdQeoMM9FiQ2ZxfxKFtMwmGTYc1+m6t90RjxWiLY6cdP4N4NhgLv9ynqWrxmSXacixrM7A5nkcnHsyAIPTEeehNihxpN9hyCDDMTu8nEE0z+5ULyVjysNKF+GM7FIJ3H+n43EX0DamGeRra1OBttm4khZFOMlikBzPNCvW4xtvDS2T+yBLLAqUJb0BKmNTGRg+8ghZ4SW86B8ELB26bEiBNpI2wD/HHZ36heJWkZGCd2u9O0iPHCBLPG4g/ut5QqUoNbgp4ducxbcfqXH161IAwI/+U9f1tTSBcP2Yx80tw6TfUq8gYgttFRtIGQ33CdiKCxlYyRakL/y9dtCEkODVHBpyteTA7IoEHuoDEO2z7UfvdOSc7uPxsJDl/btiCogk0ATvymK+GWiZl+nKmJO2urSWWqVNoMAqJjgBlxul5LZruN2aAzx/r5KIiROq88/eMDLsiAor4MFbMuSvsCcEiLDsBuV3z8U4Pg2XXzN7ooTMUIEfT2R1Cy9X2yq4HwruAJteDHzKRg7RE1ZySY2h5ISAOcQdQKVVCqhZQ6NRi71LjryrtS+VgCNXhI6fG08EoC+b261Xm/ARIyD9gCy/lq3qBJ4LstKISiSi0sDWYDmqw="
+  api_key:
+    secure: JxZxpUYHRvITc3v7faWN2rABcrAH3wKdEgxFpj6YkHQX/6kiKTVbqDukGYGlOjrPJSNgYvOuEVsz0e91+ZPWiF3gYX8kJLuxypC/fIq1GLIg/vllmQbHx1riOpk3SK0DFvlNxw07VcuAgPZykV3wZes/pWMMhJg0mNgGnHwEfIGPRZvd7p8MFaB1tQsgwzwD6TZ/yjh26Ywhriq/aMDkU2tKe/FUp7Eio+zFVtLs/fvOvHQcEe7MpswusBkhpvFxY7ht5Xo/Vr0qdjiSXNNJtqgcpK9T5L+se9VO/bsm93iVBo6++ynrVNLEIzct9VYGoVE2+Q14kz52tCeItKdqXk/D6HCb0cVWo03lCE09ddj+IkfnnFhJ87v972586t/sdqSTpZ31w336hzLbQryrTXoSQDnfZvFddPEoEMi0/Yyicb59wUEZBgwWifiAYYIHfLoGKKhyyi0nUAImKCJE4W/d2WAG3cE2Ji70xhke65PVxGOOhcYi9b7yrXxJt7IHY1bcCDQB0LByH3AV8OROgcDSzaCnNkvtPAbOxsx17m7XFuba5AVNc21lEl+85L6kjUg383qkXoavlYa745kqdRB5smJIZyg2NwXgWdNq3ra97sIOWY0GkPn+sUZ/+A437BFRuWeqaFuvlYxuKOlNz5u2S2PvBpqyCfhh+wg1CYs=
   file: bin/slex
-  skip_cleanup: true
   on:
-    all_branches: true
+    repo: christer79/slex
