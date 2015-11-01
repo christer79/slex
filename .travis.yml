@@ -3,6 +3,7 @@ install:
 - go get -t -v ./...
 - go test -v ./...
 - go build -o bin/slex -v .
+before_deploy: git fetch --tags
 deploy:
   provider: releases
   api_key:
