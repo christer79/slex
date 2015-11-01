@@ -11,3 +11,4 @@ deploy:
   file: bin/slex
   on:
     repo: christer79/slex
+    all_branches: true
